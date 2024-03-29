@@ -6,15 +6,15 @@ service:
 
 initContainers:
   parameters_pull:
-    image: docker.io/rkalluru/d77-parameter-store-init-container-image
+    image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/parameter-store-init-container-image:1.0.0
     imagePullPolicy: Always
 
 containers:
   main:
-    image: rkalluru/d77-shipping
+    image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/shipping:1.0.1
     imagePullPolicy: Always
   schema_loader:
-    image: docker.io/rkalluru/d77-schema-loader
+    image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/schema-loader:1.0.0
     imagePullPolicy: Always
 
 volumeMounts:
