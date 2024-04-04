@@ -11,7 +11,7 @@ initContainers:
 
 containers:
   main:
-    image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/shipping:1.0.1
+    image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/shipping:1.0.2
     imagePullPolicy: Always
   schema_loader:
     image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/schema-loader:1.0.0
